@@ -1,0 +1,364 @@
+body {
+  margin: 0; }
+
+.nav-container button {
+  display: none; }
+
+.nav {
+  display: flex;
+  background-color: lightgray; }
+  .nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0; }
+    .nav a:not(:last-child) {
+      border-right: 1px solid gray; }
+
+.red {
+  background-color: #fe0000; }
+
+.light-blue {
+  background-color: #0c63b3; }
+
+.dark-blue {
+  background-color: #1a247b; }
+
+.lighter-blue {
+  background-color: #63c2c8; }
+
+.parent {
+  padding: 0 10px;
+  border: 1px solid lightgrey; }
+  .parent div {
+    height: 175px; }
+  .parent .first-line,
+  .parent .second-line,
+  .parent .third-line,
+  .parent .four-line {
+    display: flex; }
+  .parent .first-line .div0-mobile {
+    display: block; }
+  .parent .first-line .div1 {
+    background-color: black;
+    height: 360px;
+    width: 20%;
+    margin-right: 15px; }
+  .parent .first-line .div2 {
+    width: 18%; }
+  .parent .first-line .div3 {
+    width: 22%;
+    margin-right: 15px; }
+  .parent .first-line .div4 {
+    width: 22%; }
+  .parent .first-line .div5 {
+    width: 18%;
+    margin-bottom: 15px; }
+  .parent .second-line {
+    margin-left: 250px;
+    margin-bottom: 30px; }
+    .parent .second-line .div1-tablet {
+      display: none; }
+    .parent .second-line .div5-tablet {
+      display: none; }
+    .parent .second-line .div6 {
+      font-size: 2em;
+      font-weight: bold;
+      width: 75%;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+    .parent .second-line .div7 {
+      width: 25%;
+      margin-top: 15px; }
+  .parent .third-line .div8 {
+    width: 20%; }
+  .parent .third-line .div9 {
+    width: 22%;
+    margin-right: 15px; }
+  .parent .third-line .div10 {
+    width: 18%; }
+  .parent .third-line .div11 {
+    width: 22%;
+    margin-right: 15px; }
+  .parent .third-line .div12 {
+    width: 19.5%;
+    height: 190px; }
+  .parent .four-line {
+    margin-top: 15px; }
+    .parent .four-line .div13 {
+      width: 22%; }
+    .parent .four-line .div14 {
+      width: 20%;
+      margin-right: 15px; }
+    .parent .four-line .div15 {
+      width: 22%; }
+    .parent .four-line .div16 {
+      width: 18%;
+      margin-right: 15px; }
+    .parent .four-line .div17 {
+      width: 19.5%; }
+  .parent .fifth-line-tablet {
+    display: none; }
+
+@media (max-width: 801px) {
+  .nav-container button {
+    display: block; }
+  .nav-container .x-icon {
+    display: none; }
+  .nav-container.show {
+    background-color: #c2c6c9de;
+    width: 41%; }
+    .nav-container.show .hamburger-icon {
+      display: none; }
+    .nav-container.show .x-icon {
+      display: block; }
+
+  .nav {
+    background-color: transparent;
+    display: none; }
+    .nav.show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #c2c6c9de;
+      width: 40%;
+      height: 100%;
+      transition: 0.5s; }
+      .nav.show a {
+        border-right: none;
+        border-bottom: 1px solid gray;
+        margin: 0; }
+        .nav.show a:hover {
+          background-color: gray; }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer; }
+    button:focus {
+      outline: none; }
+    button img {
+      width: 32px; }
+
+  .parent div {
+    height: 185px; }
+  .parent .first-line .div0-mobile {
+    display: none; }
+  .parent .first-line .div1 {
+    display: none; }
+  .parent .first-line .div2 {
+    min-width: 25%;
+    height: 200px; }
+  .parent .first-line .div3 {
+    min-width: 25%;
+    margin-right: 20px;
+    margin-left: 20px; }
+  .parent .first-line .div4 {
+    min-width: 25%; }
+  .parent .first-line .div5 {
+    min-width: 20%;
+    margin-bottom: 15px; }
+  .parent .second-line {
+    margin-left: 0;
+    margin-bottom: 20px; }
+    .parent .second-line .div1-tablet {
+      display: block;
+      background-color: black;
+      min-width: 25%; }
+    .parent .second-line .div5-tablet {
+      display: block;
+      min-width: 25%;
+      margin-left: 20px; }
+    .parent .second-line .div6 {
+      font-size: 2em;
+      width: 60%;
+      margin-right: 0;
+      margin-left: 20px;
+      color: #0b61ab; }
+    .parent .second-line .div7 {
+      display: none; }
+  .parent .third-line .div8 {
+    min-width: 25%; }
+  .parent .third-line .div9 {
+    min-width: 28%;
+    margin-right: 20px; }
+    .parent .third-line .div9.dark-blue {
+      background-color: #63c2c8; }
+  .parent .third-line .div10 {
+    min-width: 22%; }
+  .parent .third-line .div11 {
+    min-width: 22.6%;
+    margin-right: 0; }
+    .parent .third-line .div11.light-blue {
+      background-color: #1a247b; }
+  .parent .third-line .div12 {
+    display: none; }
+  .parent .four-line {
+    margin-top: 20px; }
+    .parent .four-line .div13 {
+      min-width: 28%; }
+    .parent .four-line .div14 {
+      min-width: 25%;
+      margin-right: 20px; }
+    .parent .four-line .div15 {
+      display: none; }
+    .parent .four-line .div16 {
+      min-width: 22%;
+      margin-right: 0; }
+    .parent .four-line .div17 {
+      min-width: 22.6%; }
+  .parent .fifth-line-tablet {
+    display: flex;
+    margin-top: 20px; }
+    .parent .fifth-line-tablet .red-first {
+      min-width: 25%; }
+    .parent .fifth-line-tablet .light-blue {
+      min-width: 28%;
+      margin-right: 20px; }
+    .parent .fifth-line-tablet .lighter-blue {
+      min-width: 24%; }
+    .parent .fifth-line-tablet .red-last {
+      min-width: 20.6%; } }
+@media (max-width: 600px) {
+  .nav-container.show {
+    width: 100%; }
+
+  .nav.show {
+    width: 100%;
+    z-index: 1;
+    height: 100vh; }
+
+  .parent .first-line,
+  .parent .second-line,
+  .parent .third-line,
+  .parent .four-line {
+    flex-direction: column; }
+  .parent .first-line {
+    margin-bottom: 45px; }
+    .parent .first-line .div0-mobile {
+      display: block;
+      width: 100%;
+      background-color: #fe0000;
+      min-height: 120px; }
+    .parent .first-line .div1 {
+      display: block;
+      width: 100%;
+      min-height: 70px;
+      margin-bottom: 15px; }
+    .parent .first-line .div2 {
+      width: 50%;
+      min-height: 110px;
+      background-color: #0c63b3; }
+    .parent .first-line .div3 {
+      min-width: 50%;
+      min-height: 110px;
+      align-self: flex-end;
+      background-color: #fe0000;
+      margin-right: 0;
+      position: relative;
+      top: -110px; }
+    .parent .first-line .div4 {
+      min-width: 50%;
+      min-height: 110px;
+      position: relative;
+      top: -95px;
+      background-color: #fe0000; }
+    .parent .first-line .div5 {
+      min-width: 50%;
+      min-height: 110px;
+      align-self: flex-end;
+      background-color: #1a247b;
+      margin-right: 0;
+      position: relative;
+      top: -205px; }
+  .parent .second-line .div1-tablet,
+  .parent .second-line .div5-tablet,
+  .parent .second-line .div6 {
+    display: none; }
+  .parent .third-line .div8 {
+    min-width: 50%;
+    min-height: 110px;
+    position: relative;
+    top: 20px; }
+  .parent .third-line .div9 {
+    background-color: #63c2c8;
+    min-width: 50%;
+    min-height: 110px;
+    align-self: flex-end;
+    margin-right: 0;
+    position: relative;
+    top: -90px; }
+  .parent .third-line .div10 {
+    min-width: 50%;
+    min-height: 110px;
+    position: relative;
+    top: -75px;
+    background-color: #1a247b; }
+  .parent .third-line .div11.light-blue {
+    min-width: 50%;
+    min-height: 110px;
+    align-self: flex-end;
+    background-color: #fe0000;
+    margin-right: 0;
+    position: relative;
+    top: -185px; }
+  .parent .four-line .div13 {
+    width: 50%;
+    min-height: 110px;
+    background-color: #0c63b3;
+    position: relative;
+    top: 65px; }
+  .parent .four-line .div14 {
+    min-width: 50%;
+    min-height: 110px;
+    align-self: flex-end;
+    background-color: #fe0000;
+    margin-right: 0;
+    position: relative;
+    top: -45px; }
+  .parent .four-line .div16 {
+    margin-right: 0;
+    min-width: 50%;
+    min-height: 110px;
+    position: relative;
+    top: -30px;
+    background-color: #fe0000; }
+  .parent .four-line .div17 {
+    min-width: 50%;
+    min-height: 110px;
+    align-self: flex-end;
+    background-color: #1a247b;
+    margin-right: 0;
+    position: relative;
+    top: -140px; }
+  .parent .fifth-line-tablet {
+    flex-direction: column; }
+    .parent .fifth-line-tablet .red-first {
+      width: 50%;
+      min-height: 110px;
+      position: relative;
+      top: 110px; }
+    .parent .fifth-line-tablet .light-blue {
+      min-width: 50%;
+      min-height: 110px;
+      align-self: flex-end;
+      background-color: #0c63b3;
+      margin-right: 0;
+      position: relative; }
+    .parent .fifth-line-tablet .lighter-blue {
+      width: 50%;
+      min-height: 110px;
+      position: relative;
+      top: 15px; }
+    .parent .fifth-line-tablet .red-last {
+      min-width: 50%;
+      min-height: 110px;
+      align-self: flex-end;
+      background-color: #fe0000;
+      margin-right: 0;
+      position: relative;
+      top: -95px;
+      margin-bottom: 10px; } }
